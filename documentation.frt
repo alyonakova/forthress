@@ -69,3 +69,13 @@ Read hexadecimal literal
 ( -- number )
 Read octal literal
 " doc-word
+
+' O_CREAT g"
+( -- 0x40 )
+Push a flag O_CREAT (create new file if pathname does not exist) onto stack
+" doc-word
+
+' O_APPEND g"
+( -- 0x400 )
+Push a flag O_APPEND (seek to the end of file) onto stack
+" doc-word

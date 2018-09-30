@@ -27,3 +27,35 @@ Read one hexadecimal digit
 ( -- digit )
 Read one decimal digit
 " doc-word
+
+' ." g"
+( -- )
+Print string literal
+
+This word reads the string until it meets a double quote, stores it in
+the word being defined and prints it.
+" doc-word
+
+' g" g"
+( -- string )
+Store string literal in global data segment
+
+This word reads the string until it meets a double quote, stores it in
+the global data segment and pushes the pointer to it onto the stack.
+" doc-word
+
+' " g"
+( -- string )
+Read string literal with escape sequences
+
+This word reads the string until it meets a double quote, stores it in
+the word being defined and pushes the pointer to it onto the stack.
+" doc-word
+
+' _" g"
+( -- string )
+Read string literal without expanding escape sequences
+
+This word reads the string until it meets a double quote, stores it in
+the word being defined and pushes the pointer to it onto the stack.
+" doc-word

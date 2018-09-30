@@ -59,3 +59,13 @@ Read string literal without expanding escape sequences
 This word reads the string until it meets a double quote, stores it in
 the word being defined and pushes the pointer to it onto the stack.
 " doc-word
+
+' 0x g"
+( -- number )
+Read hexadecimal literal
+" doc-word
+
+' 08x g"
+( -- number )
+Read octal literal
+" doc-word
